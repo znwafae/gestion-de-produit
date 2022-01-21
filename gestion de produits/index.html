@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<!---------------------------- Navbar ----------------------------->
+        <div class="navbar navbar-dark navbar-expand-md text-white">
+            <div class="container">
+              <a href="#" class="navbar-brand">Perfume</a>
+              <input id="SearchInpt" type="text" placeholder="Search..">
+            </div>  
+        </div>
+
+<!----------------------------- header ------------------------------->
+     <section id="header"> 
+            <img class="img-fluid" src="search-back.jpg" alt="Responsive image">
+    </section>
+
+<!---------------------------- table ------------------------------->
+    <div class="container container-sm">
+      <table class="table  table-striped">
+        <thead>
+            <th data-column="id" data-order="desc">Id &#9650</th>
+            <th data-column="désignation" data-order="desc">Désignation &#9650</th>
+            <th data-column="prix" data-order="desc">Prix &#9650</th>
+            <th data-column="catégorie" data-order="desc">Catégorie &#9650</th>
+            <th data-column="disponibilité" data-order="desc">Disponibilité &#9650</th>
+            <th data-column="fournisseur" data-order="desc">Fournisseur &#9650</th>
+        </thead>
+      <tbody id="tabley">
+
+      </tbody>
+  </table>
+    </div>
+<!------------------------- script ------------------------------->
+      <script>
+        var tbody = document.getElementsByTagName("tbody")[0];
+        var DATA;
+        $.ajax({
+          url:"fichier.json",
+          success:function(data){
+            DATA = data;
+            console.log(data)
+            fill(data);
+          }
+        })
+        function fill(dt){
+          for(var i = 0; i < dt.length; i++){
+              tbody.innerHTML += `<tr> 
+                <td>${dt[i].id}</td>
+                <td>${dt[i].désignation}</td> 
+                <td>${dt[i].prix}</td> 
+                <td>${dt[i].catégorie}</td> 
+                <td>${dt[i].disponibilité}</td> 
+                <td>
+                  <ul>
+                    <li>${dt[i].fournisseur["Raison Sociale"]} <br></li>
+                    <li> ${dt[i].fournisseur.Adresse}</li>
+                  </ul>
+                </td>                 
+                </tr>`
+            }
+        }
+// ----------------------------- search-------------------------------
+        var SearchInpt = document.getElementById("SearchInpt");
+        $("#SearchInpt").on("keyup",function(){
+          var list = [];
+          DATA.forEach(element =>{
+            if(element["désignation"].includes(SearchInpt.value)){
+              list.push(element);
+            }
+          })
+            $("tbody").html("");
+            fill(list);
+        })
+// ----------------------------- trie-------------------------------
+      $('th').on('click', function(){
+          var column = $(this).data('column')
+          var order = $(this).data('order')
+          var text = $(this).html()
+          text = text.substring(0, text.length - 1)
+
+          if(order == 'desc'){
+            $(this).data('order', "asc")
+            DATA = DATA.sort((a,b) => a[column] > b[column] ? 1 : -1)
+            text += '&#9660'
+
+          }
+          else{
+            $(this).data('order', "desc")
+            DATA = DATA.sort((a,b) => a[column] < b[column] ? 1 : -1)
+            text += '&#9650'
+          }
+          $("#tabley").html("");
+          $('#tabley').append(DATA);
+          fill(DATA)
+        })
+      </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.navbar{
+    background-color: rgb(197, 193, 175);
+}
+tr{
+    text-align: center;
+}
+#searchbar{
+    border-radius: 5px;
+  }
+td{
+    text-align: start;
+}
