@@ -1,0 +1,145 @@
+[
+            {
+            "id" : 506302,
+            "désignation" : "Aoud Ambre",
+            "prix" : "1,160.99 MAD",
+            "catégorie" : "parfums OUD pour femmes",
+            "disponibilité" : ["Tanger","Rabat","Casablanca","Marrakech"],
+            "fournisseur" : {
+                            "Raison Sociale":"luky",
+                            "Adresse":"belair, rue 16 n20,tanger,maroc"
+                            }      
+            },
+            {
+            "id" : 506305,
+            "désignation" : "Drak Vanilla",
+            "prix" : "1,350.99 MAD",
+            "catégorie" : "parfums VANILLE pour femmes",
+            "disponibilité" : ["Tanger","Rabat","Casablanca","Marrakech"],
+            "fournisseur" : {
+                            "Raison Sociale":"luky",
+                            "Adresse":"belair, rue 16 n20,tanger,maroc"
+                            }   
+            },
+            {
+            "id" : 506301,
+            "désignation" : "Aoud Damascus",
+            "prix" : "1,160.99 MAD",
+            "catégorie" : "parfums OUD pour femmes",
+            "disponibilité" : ["Tanger","Rabat","Casablanca","Marrakech"],
+            "fournisseur" : {
+                            "Raison Sociale":"luky",
+                            "Adresse":"belair, rue 16 n20,tanger,maroc"
+                            }   
+            },
+            {
+            "id" : 506303,
+            "désignation" : "Fantastic Oud",
+            "prix" : "1,990.99 MAD",
+            "catégorie" : "parfums OUD pour femmes",
+            "disponibilité" : ["Tanger","Rabat","Casablanca","Marrakech"],
+            "fournisseur" : {
+                            "Raison Sociale":"luky",
+                            "Adresse":"belair, rue 16 n20,tanger,maroc"
+                            }      
+            },
+            {
+            "id" : 506304,
+            "désignation" : "Black Aoud",
+            "prix" : "1,530.99 MAD",
+            "catégorie" : "parfums OUD pour femmes",
+            "disponibilité" : ["Tanger","Rabat","Casablanca","Marrakech"],
+            "fournisseur" : {
+                            "Raison Sociale":"luky",
+                            "Adresse":"belair, rue 16 n20,tanger,maroc"
+                            }    
+            },
+            {
+            "id" : 506306,
+            "désignation" : "Sweet Vanilla",
+            "prix" : "1,260.99 MAD",
+            "catégorie" : "parfums VANILLE pour femmes",
+            "disponibilité" : ["Tanger","Rabat","Casablanca","Marrakech"],
+            "fournisseur" : {
+                            "Raison Sociale":"luky",
+                            "Adresse":"belair, rue 16 n20,tanger,maroc"
+                            }      
+            },
+            {
+            "id" : 506308,
+            "désignation" : "Crazy In Love",
+            "prix" : "1,650.99 MAD",
+            "catégorie" : "parfums VANILLE pour femmes",
+            "disponibilité" : ["Tanger","Rabat","Casablanca","Marrakech"],
+            "fournisseur" : {
+                            "Raison Sociale":"luky",
+                            "Adresse":"belair, rue 16 n20,tanger,maroc"
+                            }    
+            },
+            {
+            "id" : 506309,
+            "désignation" : "Boisé Vanillé",
+            "prix" : "1,550.99 MAD",
+            "catégorie" : "parfums VANILLE pour femmes",
+            "disponibilité" : ["Tanger","Rabat","Casablanca","Marrakech"],
+            "fournisseur" : {
+                            "Raison Sociale":"luky",
+                            "Adresse":"belair, rue 16 n20,tanger,maroc"
+                            }    
+            },
+            {
+            "id" : 506313,
+            "désignation" : "Velvet Flowers",
+            "prix" : "1,530.99 MAD",
+            "catégorie" : "parfums FLEURS pour femmes",
+            "disponibilité" : ["Tanger","Rabat","Casablanca","Marrakech"],
+            "fournisseur" : {
+                            "Raison Sociale":"luky",
+                            "Adresse":"belair, rue 16 n20,tanger,maroc"
+                            }    
+            },
+            {
+            "id" : 506310,
+            "désignation" : "Gold Flowers",
+            "prix" : "1,420.99 MAD",
+            "catégorie" : "parfums FLEURS pour femmes",
+            "disponibilité" : ["Tanger","Rabat","Casablanca","Marrakech"],
+            "fournisseur" : {
+                            "Raison Sociale":"luky",
+                            "Adresse":"belair, rue 16 n20,tanger,maroc"
+                            }   
+            },
+            {
+            "id" : 506312,
+            "désignation" : "Sunset Flowers",
+            "prix" : "1,990.99 MAD",
+            "catégorie" : "parfums FLEURS pour femmes",
+            "disponibilité" : ["Tanger","Rabat","Casablanca","Marrakech"],
+            "fournisseur" : {
+                            "Raison Sociale":"luky",
+                            "Adresse":"belair, rue 16 n20,tanger,maroc"
+                            }      
+            },
+            {
+            "id" : 506307,
+            "désignation" : "Day Dreams",
+            "prix" : "1,190.99 MAD",
+            "catégorie" : "parfums VANILLE pour femmes",
+            "disponibilité" : ["Tanger","Rabat","Casablanca","Marrakech"],
+            "fournisseur" : {
+                            "Raison Sociale":"luky",
+                            "Adresse":"belair, rue 16 n20,tanger,maroc"
+                            }      
+            },
+            {
+            "id" : 506311,
+            "désignation" : "Jasmin Full",
+            "prix" : "1,160.99 MAD",
+            "catégorie" : "parfums FLEURS pour femmes",
+            "disponibilité" : ["Tanger","Rabat","Casablanca","Marrakech"],
+            "fournisseur" : {
+                            "Raison Sociale":"luky",
+                            "Adresse":"belair, rue 16 n20,tanger,maroc"
+                            }      
+            }
+]
